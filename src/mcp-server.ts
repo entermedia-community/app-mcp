@@ -47,7 +47,7 @@ const AND = "AND",
 	XOR = "XOR",
 	AND_GATE = "and_gate",
 	OR_GATE = "or_gate",
-	XOR_GATE = "XOR_gate";
+	XOR_GATE = "xor_gate";
 
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
 	tools: [
