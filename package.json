@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Logic gate test",
 	"type": "module",
+	"license": "MIT",
 	"bin": {
 		"logic-gates": "dist/index.js"
 	},
