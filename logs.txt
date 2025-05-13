@@ -1,0 +1,48 @@
+
+2025-05-13T00:17:37.431Z
+Received POST request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","accept":"application/json, text/event-stream","content-type":"application/json","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate","content-length":"205"}
+Body:
+	{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{"sampling":{},"roots":{"listChanged":true}},"clientInfo":{"name":"mcp-inspector","version":"0.11.0"}}}
+
+
+2025-05-13T00:17:37.450Z
+Received POST request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","mcp-session-id":"d3cef799-e1b4-4550-a9c5-51cd1145875c","accept":"application/json, text/event-stream","content-type":"application/json","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate","content-length":"54"}
+Body:
+	{"jsonrpc":"2.0","method":"notifications/initialized"}
+
+
+2025-05-13T00:17:37.453Z
+Received GET request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","mcp-session-id":"d3cef799-e1b4-4550-a9c5-51cd1145875c","accept":"text/event-stream","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate"}
+Body:
+	undefined
+
+
+2025-05-13T00:17:55.456Z
+Received POST request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","mcp-session-id":"d3cef799-e1b4-4550-a9c5-51cd1145875c","accept":"application/json, text/event-stream","content-type":"application/json","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate","content-length":"85"}
+Body:
+	{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{"_meta":{"progressToken":1}}}
+
+
+2025-05-13T00:18:14.437Z
+Received POST request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","mcp-session-id":"d3cef799-e1b4-4550-a9c5-51cd1145875c","accept":"application/json, text/event-stream","content-type":"application/json","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate","content-length":"128"}
+Body:
+	{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"_meta":{"progressToken":2},"name":"greet","arguments":{"name":"Anna"}}}
+
+
+2025-05-13T00:18:27.532Z
+Received POST request at /mcp
+Headers:
+	{"host":"localhost:3000","connection":"keep-alive","mcp-session-id":"d3cef799-e1b4-4550-a9c5-51cd1145875c","accept":"application/json, text/event-stream","content-type":"application/json","accept-language":"*","sec-fetch-mode":"cors","user-agent":"node","accept-encoding":"gzip, deflate","content-length":"160"}
+Body:
+	{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"_meta":{"progressToken":3},"name":"start-notification-stream","arguments":{"interval":100,"count":50}}}
+

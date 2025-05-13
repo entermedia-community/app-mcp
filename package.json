@@ -1,34 +1,34 @@
 {
-	"name": "gates",
-	"version": "1.0.0",
-	"description": "Logic gate test",
-	"type": "module",
-	"license": "MIT",
-	"bin": {
-		"logic-gates": "dist/index.js"
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc && shx chmod +x dist/src/*.js",
-		"start": "node dist/src/index.js",
-		"inspect": "npx @modelcontextprotocol/inspector",
-		"watch": "tsc --watch"
-	},
-	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.10.1",
-		"body-parser": "^2.2.0",
-		"cors": "^2.8.5",
-		"express": "^5.1.0",
-		"zod": "^3.24.3",
-		"zod-to-json-schema": "^3.23.5"
-	},
-	"devDependencies": {
-		"@types/cors": "^2.8.17",
-		"@types/express": "^5.0.1",
-		"@types/node": "^22",
-		"shx": "^0.3.4",
-		"typescript": "^5.3.3"
-	}
+  "name": "gates",
+  "version": "1.0.0",
+  "description": "Logic gate test",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "logic-gates": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && shx chmod +x dist/src/*.js && node dist/src/index.js",
+    "start": "node dist/src/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^3.24.3",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
 }
